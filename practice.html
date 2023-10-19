@@ -1,0 +1,356 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>메뉴 만들기</title>
+    <style>
+        ul {
+            background-color: black;
+            width: 100px;
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+        }
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            padding: 8px;
+        }
+        li a.current {
+            background-color: white;
+            color: black ;
+            border: 1px solid black;
+        }
+        li a:hover:not(.current) {
+            background-color: darkblue;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+<p>요리 방법</p>
+<ul>
+    <li><a href="recipe/gamjatang.html">감자탕</a></li>
+    <li><a href="recipe/pasta.html">파스타</a></li>
+    <li><a href="recipe/noodle.html">비빔국수</a></li>
+    <li><a href="recipe/teokbokki.html">떡복이</a></li>
+</ul>
+</body>
+</html> -->
+
+<!--
+<!DOCTYPE html> <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>표 만들기</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        caption {
+            font-size: large;
+            font-weight: bold;
+            margin: 10px;
+        }
+        th {
+            width: 100px;
+            padding: 6px;
+            border-top: 2px solid black;
+            border-bottom: 2px solid black;
+            background-color: lightgray;
+        }
+        td {
+            text-align: center;
+            padding:5px;
+            border-bottom: 1px solid black;
+        }
+        tr:last-child {
+            border-bottom: 2px solid black;
+        }
+        tbody tr:nth-child(even) { /* 짝수 <tr>에 적용*/ background-color: lightcyan; }
+        }
+        tbody tr:hover {
+            background-color: pink;
+        }
+    </style>
+
+<body> <table>
+    <caption>1900 ~ 1903 개체수 추이</caption> <thead>
+<tr> <th>년도</th> <th>토끼</th> <th>시라소니</th><th>당근</th></tr>
+</thead> <tbody>
+<tr> <td>1900</td><td>30,000</td><td>4,000</td><td>48,300</td></tr>
+<tr> <td>1901</td><td>47,200</td><td>6,100</td><td>48,200</td></tr>
+<tr> <td>1902</td><td>70,200</td><td>9,800</td><td>41,500</td></tr>
+<tr>
+    <td>1903</td><td>77,400</td><td>35,200</td> <td>38,200</td></tr>
+</tbody> </table> </body>
+</html>
+-->
+<!--
+<!DOCTYPE html> <html lang="en"> <head>
+    <meta charset="UTF-8">
+    <title>div and span elements</title>
+</head>
+<body>
+<div>*** 구역 1: 구역1의 컨텐츠 ***</div>
+<span>*** 구역 2: 구역2의 컨텐츠 ***</span>
+<span>## 스팬 1: 구역2에 바로 이어진 컨텐츠##</span>
+<div>
+    *** 구역 3: 스팬 1에 이어진 컨텐츠
+    <span>## 스팬 2: 구역 3내의 컨텐츠##</span> 구역 3의 이어진 컨텐츠 ***
+</div>
+</body> </html>
+-->
+
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Example</title>
+</head>
+<body>
+<p>This is a <span>span element</span> inside a paragraph.</p>
+</body>
+</html>
+-->
+
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>이미지 삽입</title> </head>
+<body>
+<h3>이미지 삽입</h3>
+<form>
+    <input type="image" alt="html이미지">
+</form>
+</body>
+</html>
+-->
+
+<!--
+이름 <input type="text" >
+
+<label for=“usr_name"> 이름 </label>
+<input type="text" id=“usr_name">
+
+<label>이름
+    <input type="text">
+</label>
+-->
+
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>연습</title> </head>
+<body>
+<style>
+p {
+    display: none;
+    background-color: yellow;
+    padding: 20px;
+    }
+div:hover p {
+            display: block;
+}
+</style>
+<div>Hover over this div element to show the p element
+    <p>Tada! Here I am!</p>
+</div>
+</body>
+</html>
+-->
+
+<!--
+<!DOCTYPE html> <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>선택자</title>
+</head>
+<body>
+<h3 class="heading">Web Progamming</h3>
+<div>
+    <p class="heading">주요학습내용</p>
+    <ul>
+        <li> <a href="lecture/html5.html">HTML5</a></li>
+        <li> <a href="lecture/css3.html">CSS3</a></li>
+        <li> <a href="lecture/javascript.html">Javascript</a></li>
+        <li> <a href="lecture/bootstrap.html">Bootstrap</a></li> </ul>
+</div>
+<div id="warnings">
+    <p class="heading"> 주의 사항</p>
+    <ul id="w_cnts">
+        <li>마감기한이 지나면 과제 제출이 자동으로 차단됩니다. </li>
+        <li>1/4이상 결석하는 경우 자동 F입니다.</li> </ul>
+</div>
+</body>
+</html>
+
+<style>
+    a:link, a:visited {
+        text-decoration: none; }
+    a:hover {
+        background-color: #9ec5fe;
+        font-weight: bold; }
+    h3::first-letter {
+        color: brown;
+        font-size: x-large; }
+    .heading {
+        font-size: 18px;
+        font-weight: bold; }
+    #warnings{
+        padding: 20px; padding-bottom: 0px; font-size:18px;
+        color: red; background-color: #9ec5fe; }
+    #w_cnts{
+        font-size: 15px;
+        color: brown; }
+</style>
+-->
+
+<!--
+<!DOCTYPE html> <html lang="en"> <head>
+    <meta charset="UTF-8">
+    <title>표 만들기</title> </head>
+<body> <table>
+    <caption>1900 ~ 1903 개체수 추이</caption> <thead>
+<tr> <th>년도</th> <th>토끼</th> <th>시라소니</th><th>당근</th></tr>
+</thead> <tbody>
+<tr> <td>1900</td><td>30,000</td><td>4,000</td><td>48,300</td></tr>
+<tr> <td>1901</td><td>47,200</td><td>6,100</td><td>48,200</td></tr>
+<tr> <td>1902</td><td>70,200</td><td>9,800</td><td>41,500</td></tr>
+<tr>
+    <td>1903</td><td>77,400</td><td>35,200</td> <td>38,200</td></tr>
+</tbody> </table> </body>
+</html>
+<style>
+    table {border-collapse: collapse;}
+    caption { font-size: large; font-weight: bold; margin: 10px; background-color: bisque; }
+    th {
+        width: 100px;
+        padding: 6px;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        background-color: lightgray;
+    }
+    td {text-align: center; padding:5px;
+        border-bottom: 1px solid black;
+    }
+    tr:last-child {
+        border-bottom: 2px solid black;
+    }
+    tbody tr:nth-child(even) { /* 짝수 <tr>에 적용*/ background-color: lightcyan; }
+    }
+    tbody tr:hover {
+        background-color: pink;
+    }
+</style>
+-->
+
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>display 속성</title>
+
+    <style>
+        span {
+            display: block;
+            width: 100px;
+            height: 50px; background-color: darkred; color: white;
+            padding: 5px;
+            margin: 5px;
+        }
+        div div {
+            display: inline-block;
+            width: 100px ;
+            height: 50px; background-color: #9ec5fe; padding: 10px;
+            margin: 20px; }
+</style>
+
+</head>
+<body>
+<div>블록 내에 위치하는
+    <span>인라인 1</span>
+    <span>인라인 2</span> <div>블록 1</div> <div>블록 2</div>입니다.
+</div> </body> </html>
+-->
+
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>광야 - 이육사</title>
+    <style>
+        .s {
+            display: inline-block; width: 280px;
+            margin: 10px;
+            padding: 30px; background-color: black; color: white;
+        }
+    </style>
+</head>
+<body>
+<h3 style="text-align: center;">광 야</h3>
+<h4 style="text-align: right;">이육사</h4>
+<hr>
+<div class="s">
+    <div>까마득한 날에</div> <div>하늘이 처음 열리고</div> <div>어데 닭 우는 소리 들렸으랴.</div>
+</div>
+<div class="s">
+    <div>모든 산맥들이</div>
+    <div>바다를 연모해 휘달릴 때도</div> <div>차마 이곳을 범하던 못하였으리라.</div>
+</div>
+<div class="s">
+    <div>끊임없는 굉음을</div> <div>부지런한 계절이 피어선 지고</div> <div>큰 강물이 비로소 길을 열었다.</div>
+</div>
+<div class="s">
+    <div>지금 눈 내리고</div> <div>매화 향기 홀로 아득하니</div> <div>내 여기 가난한 노래의 씨를 뿌려라.</div>
+</div>
+<div class="s">
+    <div>다시 천고의 뒤에</div> <div>백마 타고 오는 초인이 있어</div> <div>이 광야에서 목놓아 부르게 하리라.</div>
+</div>
+</body>
+</html>
+-->
+
+<!--
+<meta charset="UTF-8">
+<title>fixed position 속성 활용</title>
+<style>
+    .container { width: 600px; height: 1000px;
+        border: 2px solid black; }
+    .pos { width: 150px; height: 80px;
+        top: 100px;
+        left: 200px; }
+    .static { position: static; background-color: #9ec5fe;
+        border: 1px solid black; } .relative { position: relative; }
+</style>
+</head>
+<body>
+<h3>이미지의 고정 위치 지정</h3> <div class="container">
+    <div class="static pos">정적 위치 컨텐츠</div> <div class="relative pos">
+    <img src="images/coffee.png" style="width:150px;"> </div>
+</div> </body> </html>
+-->
+
+<meta charset="UTF-8">
+<title>t</title>
+<style>
+    .star-label {
+    color: red; /* * 문자의 색상을 빨간색으로 설정합니다. */
+    /* 기타 스타일 속성들 */
+    }
+</style>
+<label for="username" class="star-label">* 사용자 이름:</label>
+<input type="text" id="username" name="username">
+
+
+
