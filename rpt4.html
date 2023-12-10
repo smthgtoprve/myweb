@@ -17,23 +17,23 @@
 
         // id가 'size'인 입력 요소의 값을 읽어 해당 크기의 파스칼 삼각형을 id가 'draw_area'인 영역에 그리는 기능의 함수
         function pascals() {
-            var triangle_height = parseInt(document.getElementById('size').value);
+            var height = parseInt(document.getElementById('size').value);
             var draw = document.getElementById('draw_area');
 
-            for (var i = 0; i < triangle_height; i++) {
+            draw.innerHTML = '';
+
+            for (var i = 0; i < height; i++) {
                 var row = '';
-                var coefficient = 1;
+                var coeff = 1;
 
                 for (var j = 0; j <= i; j++) {
-                    row += coefficient + ' ';
-                    coefficient = coefficient * (i - j) / (j + 1);
+                    row += coeff + ' ';
+                    coeff = coeff * (i - j) / (j + 1);
                 }
-
-                var row_element = document.createElement('div');
-                row_element.textContent = row.trim();
-                draw.appendChild(row_element);
+            draw.innerHTML += `<div>${row.trim()}</div>`;
             }
         }
+
     </script>
 </head>
 <body>
